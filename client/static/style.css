@@ -2,22 +2,6 @@ td {
 	padding: 5px;
 }
 
-select.multiple {
-	height: 80px;
-}
-
-#reports {
-	width: 300px !important;
-}
-
-.left-border {
-	border-left: 1px solid black;
-}
-
 div.row.blue {
 	height: 10px;
-}
-
-.orderable {
-	cursor: pointer;
 }

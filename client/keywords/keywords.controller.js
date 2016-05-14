@@ -42,7 +42,7 @@
       }
 
       function success(res) {
-        vm.keywords = res;
+        vm.keywords = res.data.keywords;
         vm.sourceURL = '';
         toastrFactory.success("Success!");
       }
