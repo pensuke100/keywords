@@ -1,0 +1,35 @@
+<h5>Enter a URL to parse:</h5>
+<div class="row">
+	<form name="form" ng-submit="vm.getKeywords(form.$valid)">
+		<div class="input-field col m3">
+			<input type='text' placeholder="Enter URL" ng-model='vm.sourceURL' required>
+		</div>
+		<div class="input-field col m3">
+			<input type='submit' value='Go!' class="btn green accent-4" ng-disabled="form.$invalid">
+		</div>
+	</form>
+</div>
+<div class="row blue darken-4 blue-text text-darken-4 z-depth-2">-</div>
+<div class="row">
+	<div class="col m9">
+		<h5>Top ten matches:</h5>
+	</div>
+</div>
+<div class="row">
+	<div class="col m12">
+		<table class="highlight">
+			<thead>
+				<tr>
+					<th>Keyword Pair</th>
+					<th>Count</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat="keyword in vm.keywords | orderBy: '-count'">
+				<tr>
+					<td>{{keyword.pair}}</td>
+					<td>{{keyword.count}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

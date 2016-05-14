@@ -1,0 +1,36 @@
+<html ng-app='app'>
+<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+		<link rel="stylesheet" href="static/style.css">
+		<link rel="stylesheet" href="static/autocomplete.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.2/toastr.css">
+</head>
+<body>
+	<nav>
+	  <div class="nav-wrapper blue darken-4" id="root">
+	  	<div class="container">
+	  		<div class="row">
+	  			<div class="col m12">
+				    <a href="#/" class="brand-logo left">Keywords</a>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+	</nav>
+	<div class="container">
+		<br>
+		<div ng-view=""></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js'/></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<script src="static/autocomplete.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.2/toastr.min.js"></script>
+
+  <!-- Internal scripts -->
+  <script src="./build/internal/bundle.js"></script>
+</body>
+</html>
