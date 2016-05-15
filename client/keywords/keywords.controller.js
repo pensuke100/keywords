@@ -18,10 +18,6 @@
   ) {
     var vm = this;
 
-    vm.keywords = [
-      {pair: "hi ho", count: 3000},
-      {pair: "hi ho", count: 1000}
-    ]
     vm.getKeywords = getKeywords;
 
     initialize();
